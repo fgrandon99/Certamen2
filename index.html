@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Universitario</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <!-- ENCABEZADO -->
+<header>
+    <nav>
+        <div class="logo">
+            <h1>Café Universitario</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+        <!-- BANNER -->
+<section id="inicio">
+    <div class="banner-texto">
+        <h2>Disfruta el mejor café</h2>
+        <p>Hecho con pasión</p>
+        <p>En Café Universitario seleccionamos los mejores granos 
+        para brindarte una experiencia única en cada taza.</p>
+        <a href="#productos" class="btn-principal">Conoce nuestros productos</a>
+    </div>
+    <div class="imagenbanner">
+        <img src="IMG/banner.jpg" alt="Taza Banner" width="200px" height="140px">
+    </div>
+</section>
+
+
+        <!-- NOSOTROS -->
+<section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <div class="nosotros-contenido">
+        <div class="nosotros-imagen">
+            <img src="IMG/nosotros.jpg" alt="nosotros" width="200px" height="140px">
+        </div>
+        <div class="nosotros-texto">
+            <h3>¿Quiénes somos?</h3>
+            <p>Somos una cafetería universitaria que nace con la idea de entregar 
+            calidad, calidez y buen sabor en cada producto. ¡Te esperamos!</p>
+            <ul>
+                <li>Café de especialidad</li>
+                <li>Pastelería artesanal</li>
+                <li>Productos naturales</li>
+                <li>Ubicados en el campus universitario</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+        <!-- PRODUCTOS -->
+<section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="lista-productos">
+        <!-- CAFE -->
+        <div class="tarjeta-producto">
+            <img src="IMG/cafe1.jpg" alt="Café Latte" width="200px" height="140px">
+            <h3>Café Latte</h3>
+            <p>Suave mezcla de espresso con leche vaporizada, 
+            perfecta para comenzar el día.</p>
+            <span class="precio">$2.500</span>
+            <a href="#contacto" class="btn-producto">Consultar</a>
+        </div>
+
+        <!-- MUFFIN -->
+        <div class="tarjeta-producto">
+            <img src="img/muffin.jpg" alt="Muffin de Arándanos" width="200px" height="140px">
+            <h3>Muffin de Arándanos</h3>
+            <p>Esponjoso muffin con arándanos frescos, 
+            horneado diariamente en nuestra cocina.</p>
+            <span class="precio">$1.800</span>
+            <a href="#contacto" class="btn-producto">Consultar</a>
+        </div>
+
+        <!-- TORTA -->
+        <div class="tarjeta-producto">
+            <img src="img/torta.jpg" alt="Torta de Chocolate"  width="200px" height="140px">
+            <h3>Torta de Chocolate</h3>
+            <p>Deliciosa torta de chocolate con cacao 100%, 
+            ideal para compartir en cualquier momento.</p>
+            <span class="precio">$2.900</span>
+            <a href="#contacto" class="btn-producto">Consultar</a>
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- FORMULARIO Y REGISTROS -->
+<section id="contacto">
+    <div class="contacto-contenedor">
+        <div class="formulario-contenedor">
+            <h2>Solicitud de Información</h2>
+            <form id="formulario-solicitud">
+                <!-- NOMBRE -->
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" placeholder="Ej. Juan Pérez" required>
+
+                <!-- CORREO -->
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="Ej. juan@correo.cl" required>
+
+                <!-- TELÉFONO -->
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Ej. +569 1234 5678">
+
+                <!-- PRODUCTO DE INTERÉS -->
+                <label for="producto">Producto de interés</label>
+                <select id="producto" required>
+                    <option value="">Seleccione un producto</option>
+                    <option value="Café Latte">Café Latte</option>
+                    <option value="Muffin de Arándanos">Muffin de Arándanos</option>
+                    <option value="Torta de Chocolate">Torta de Chocolate</option>
+                </select>
+
+                <!-- COMENTARIO -->
+                <label for="comentario">Comentario o consulta</label>
+                <textarea id="comentario" 
+                placeholder="Escribe tu consulta o comentario..."></textarea>
+
+                <!-- BOTÓN ENVIAR -->
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </div>
+
+        <div class="registros-contenedor">
+            <h2>Solicitudes Registradas</h2>
+            <table id="tabla-registros">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Producto</th>
+                        <th>Correo electrónico</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+<footer>
+    <div class="footer-contenedor">
+        <!--LOGO -->
+        <div class="footer-logo">
+            <h3>Café Universitario</h3>
+            <p>Calidad, calidez y buen sabor en cada producto.</p>
+        </div>
+        <!--CONTACTO -->
+        <div class="footer-contacto">
+            <h4>Contacto</h4>
+            <ul>
+                <li>+56 9 1234 5678</li>
+                <li>contacto@cafeuniversitario.cl</li>
+            </ul>
+        </div>
+        <!--UBICACIÓN -->
+        <div class="footer-ubicacion">
+            <h4>Ubicación</h4>
+            <ul>
+                <li>Av. Sor Vicenta 1331</li>
+                <li>Los Angeles, Chile</li>
+            </ul>
+        </div>
+        <!--REDES SOCIALES -->
+        <div class="footer-redes">
+            <h4>Síguenos</h4>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+        <!-- COPYRIGHT -->
+    <div class="footer-copyright">
+        <p>© 2024 Café Universitario. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

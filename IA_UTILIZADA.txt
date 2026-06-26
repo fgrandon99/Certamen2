@@ -1,0 +1,17 @@
+Herramientas utilizadas: GitHub Copilot, Claude AI ademas de Pixabay para el uso de imagenes.
+
+PROMPTS UTILIZADOS DURANTE EL DESARROLLO
+
+1. "Dame retroalimentacion y aspectos que mejorar respecto a la estructura base HTML de la siguiente pagina web 
+    que corresponde a una cafetería con secciones de header, nosotros, productos, contacto y footer"
+
+2. "Escribe el código JavaScript para seleccionar los datos de un formulario y mostrarlos dinámicamente 
+    en una tabla HTML sin usar base de datos"
+
+3. "Crea estilos CSS para una cafetería usando colores cálidos, efectos y bordes redondeados"
+
+4. "Agrega un diseño responsive para tablets y dispositivos móviles"
+
+
+La IA fue utilizada como herramienta de apoyo para agilizar el desarrollo. Cada sugerencia fue revisada, 
+comprendida y adaptada según los requerimientos del proyecto antes de ser incorporada al código final.
